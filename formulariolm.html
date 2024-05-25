@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Notas</title>
+    <link rel="stylesheet" href="formulariolm.css">
+</head>
+<body>
+    <div class="form-card1">
+        <div class="form-card2">
+            <form class="form" id="notaForm">
+                <p class="form-heading">Calculadora de Notas</p>
+
+                <div class="form-field">
+                    <input required="" placeholder="Nombre del alumno" class="input-field" type="text" id="nombre"/>
+                </div>
+
+                <div class="form-field">
+                    <input required="" placeholder="Nota de ejercicios" class="input-field" type="number" id="ejercicios"/>
+                </div>
+
+                <div class="form-field">
+                    <input required="" placeholder="Nota del examen teórico" class="input-field" type="number" id="teorico"/>
+                </div>
+
+                <div class="form-field">
+                    <input required="" placeholder="Nota del examen práctico" class="input-field" type="number" id="practico"/>
+                </div>
+
+                <div class="form-field">
+                    <input required="" placeholder="Nota del proyecto" class="input-field" type="number" id="proyecto"/>
+                </div>
+
+                <button type="button" class="sendMessage-btn" onclick="calcularNota()">Calcular</button>
+                <button type="button" class="borrar-btn" onclick="borrar()">Borrar</button>
+
+                <div id="resultado" class="form-field"></div>
+            </form>
+        </div>
+    </div>
+
+    <script src="formulariolm.js"></script>
+</body>
+</html>
